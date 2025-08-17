@@ -1,10 +1,10 @@
-import React from "react";
+import "./footer.css";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footerr">
       <div className="footer-top">
         {/* Left Section */}
         <div className="footer-left">
