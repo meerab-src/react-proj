@@ -12,14 +12,17 @@ import AboutPage from "./pages/about.js";
 import ContactPage from "./pages/contact.js";
 import ShoppingPage from "./pages/shop.js";
 import SignUpForm from "./pages/signup.js";
+
+// users crud page
+import UsersCrud from "./UsersCrud.js";
+
+
 function App() {
   return (
     <Router>
       <Header />
 
-   
       <Routes>
-     
         <Route
           path="/"
           element={
@@ -29,14 +32,12 @@ function App() {
             </>
           }
         />
-
-
         <Route path="/shop" element={<ShoppingPage />} />
-        <Route path="/about" element={<AboutPage/>} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/signup" element={<SignUpForm />} />
-        
-        
+
+        <Route path="/users" element={<UsersCrud />} />
       </Routes>
 
       <Footer />

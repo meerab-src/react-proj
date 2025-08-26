@@ -23,6 +23,9 @@ export default function Header() {
           <NavLink to="/signup" className="nav-link">
           Signup
         </NavLink>
+         <NavLink to="/users" className="nav-link">
+          Users
+        </NavLink>
       </nav>
 
       {/* Hamburger  */}
