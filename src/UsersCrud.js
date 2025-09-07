@@ -33,7 +33,7 @@ export default function UsersCrud() {
     loadUsers();
   }
 
-  // Delete user
+  // delete user
   async function handleDelete(id) {
     await UsersAPI.remove(id);
     loadUsers();
@@ -56,7 +56,7 @@ export default function UsersCrud() {
     >
       <h2>Users (Mock API)</h2>
 
-      {/* Form */}
+      {/* form */}
       <form onSubmit={handleSubmit} style={{ marginBottom: 20 }}>
         <input
           type="text"
@@ -86,7 +86,7 @@ export default function UsersCrud() {
         )}
       </form>
 
-      {/* User list */}
+      {/* user list */}
       <ul>
         {users.map((u) => (
           <li key={u.id}>
